@@ -8,7 +8,7 @@ class dht11{
 
     function connect(){
         $this->link = mysqli_connect ('localhost','root','') or die ('Cannot connect to the DB');
-        mysqli_select_db($this->link, 'testiot') or die ('Cannoct select the DB');
+        mysqli_select_db($this->link, '(Your Database)') or die ('Cannoct select the DB');
     }
 
     function storeInDB ($temperature, $humidity){
