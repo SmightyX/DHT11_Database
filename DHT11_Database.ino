@@ -8,8 +8,8 @@
 // #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 //#define DHTTYPE DHT21   // DHT 21 (AM2301)
  
-const char* ssid = "PUSBANGNIS"; //Your SSID WiFi
-const char* password = "pusbangnisuns123"; //Your WiFi Password
+const char* ssid = "Your SSID"; //Your SSID WiFi
+const char* password = "Your Password"; //Your WiFi Password
 
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -55,7 +55,7 @@ void loop() {
     String address;
     //equate with your computer's IP address and your directory application
     //check your IP go to CMD -> "ipconfig" Or C:\xampp\htdocs\arducoding_tutorial\nodemcu_log\webapi\api\create.php
-    address ="http://10.101.2.149/testiot/dht.php?temperature=";
+    address ="http://"Your IP"/testiot/dht.php?temperature=";
     address += String(suhu);
     address += "&humidity="; 
     address += String(kelembaban) ;
